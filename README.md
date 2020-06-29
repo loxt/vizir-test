@@ -1,27 +1,19 @@
 # Vizir
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+Esse projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 10.0.0.
 
-## Development server
+## Funcionamento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Você vai precisar do Node com NPM:
+https://nodejs.org/en/download/
 
-## Code scaffolding
+Neste projeto, foi utilizado yarn em vez de NPM:
+https://classic.yarnpkg.com/pt-BR/docs/install/#debian-stable
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Após baixar tudo e estar com os arquivos OK, segue os seguintes comandos pra ligar o servidor:
 
-## Build
+1: `yarn` > este comando vai gerar a famigerada `node_modules`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+2: `yarn start` > inicia o servidor no endereço `localhost:4200`
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Não foi preciso criar testes para verificação, já que o elemento 'tempo' está sendo verificado com Regex, o que impossibilita que o valor seja negativo ou contenha letras.
